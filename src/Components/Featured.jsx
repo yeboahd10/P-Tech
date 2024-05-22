@@ -16,7 +16,7 @@ const Featured = () => {
         <div className={Styles.Box}>
           <Lottie animationData={phone} className={Styles.anim}/>
           <h4 className={Styles.title}>Determine Your Own Learning Pace</h4>
-          <p className={Styles.sub}>Learn at the comfort of your home anywhere anytime </p>
+          <p className={Styles.sub}>Learn from home anywhere anytime </p>
         </div>
         <div className={Styles.Box}>
           <Lottie animationData={last} className={Styles.anim}/>
