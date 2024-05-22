@@ -1,0 +1,86 @@
+.Nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    padding-top: 45px;
+    margin: 0 5%;
+    
+}
+.menu{
+    display: flex;
+}
+
+.title{
+    text-decoration: none;
+    color: var(--color-text);
+    font-family: 'Lilita One';
+    font-size: 30px;
+}
+.menuItems{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+.menuItems a{
+    text-decoration: none;
+    color: var(--color-text);
+    font-family: 'Fredoka';
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.menuItems a:hover{
+    
+    background-color: white;
+    color: black;
+    transform: scale(1.2);
+    
+}
+
+.Hum{
+    display: none;
+    color: white;
+    
+
+}
+
+@media screen and (max-width : 600px){
+    .Hum{
+       display: block;
+    }
+    .Nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu{
+        position: absolute;
+        right: 0;
+        margin-right: 10%;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 11px;
+        z-index: 1;
+    }
+    .menuItems{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        background-color: rgb(25,55,109);
+        gap: 19px;
+        padding: 24px 33px;
+    }
+   
+    
+    .title{
+        font-size: 18px;
+        z-index: 4;
+    }
+
+    .menuOpen{
+        display: flex;
+        z-index: 1;
+    }
+}

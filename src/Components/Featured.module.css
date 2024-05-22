@@ -1,0 +1,43 @@
+.Container{
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: var(--color-bg);
+    justify-content: space-evenly;
+    color: white;
+    text-align: center;
+    
+}
+.anim{
+    width: 400px;
+}
+.Box{
+    margin-top: 60px;
+}
+.title{
+    font-family: 'Fredoka' ;
+    font-size: 22px;
+}
+.sub{
+    font-family: 'Fredoka' ;
+}
+
+@media screen and (max-width: 600px){
+    .Container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .anim{
+        width: 240px;
+        margin-left: 20px;
+    }
+    .title{
+        font-size: 18px;
+    }
+    .sub{
+        font-size: 12px;
+    }
+    
+}

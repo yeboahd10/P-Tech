@@ -1,0 +1,13 @@
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    background-color: var(--color-bg);
+    color: white;
+    
+}
+.container p{
+    margin-bottom: 20px;
+}

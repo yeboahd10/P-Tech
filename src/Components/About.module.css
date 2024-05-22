@@ -1,0 +1,50 @@
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    background-color: var(--color-bg);
+}
+.Box{
+    margin: 0 5%;
+    margin-top: 60px;
+}
+.image img{
+    width: 450px;
+}
+.content{
+    border: 2px solid white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 40px 20px;
+}
+.title{
+    font-family: 'Acme';
+    color: white;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+.desc{
+    font-size: 25px;
+    color: white;
+}
+
+@media  screen and (max-width :600px) {
+    .container{
+        flex-direction: column-reverse;
+    }
+    .image img{
+        width: 300px;
+    }
+    .content{
+        padding: 25px 5px;
+        text-align: center;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .desc{
+        font-size: 20px;
+    }
+}
