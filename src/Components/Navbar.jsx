@@ -1,7 +1,5 @@
 import React,{useState} from 'react'
 import Styles from '../Components/Navbar.module.css'
-import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
 import Courses from '../Components/Courses'
 
 
@@ -14,7 +12,7 @@ const Navbar = () => {
       
       <div className={Styles.menu} onClick={()=> setMenuOpen(!menuOpen)}>
         <div className={Styles.Hum}>
-        {menuOpen ? <CloseIcon sx={{color: 'red'}}/> : <MenuIcon   />}
+        
         </div>
       
     
