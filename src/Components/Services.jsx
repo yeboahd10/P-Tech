@@ -5,6 +5,10 @@ import Web from '../Images/web.png'
 import Android from '../Images/mobile.png'
 import Graphic from '../Images/graphic.png'
 import Data from '../Images/database.png'
+import Fade  from 'react-awesome-reveal'
+import { Slide } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
+
 
 
 
@@ -12,11 +16,23 @@ const Services = () => {
   return (
     <section className={Styles.Container}>
         <div className={Styles.ser}>
-        <h2>SERVICES</h2>
+          <Slide direction='down' >
+          <h2>SERVICES</h2>
+          </Slide>
+        
+        <Zoom>
         <img width="500px" className={Styles.image} src={Prog}/>
+        </Zoom>
+       
+       
+        
+        
+        
         </div>
         
+        
         <div className={Styles.content}>
+        <Fade>
           <div className={Styles.Box}>
               <img src={Web} className={Styles.web}/>
               <div>
@@ -25,6 +41,8 @@ const Services = () => {
               </div>
               
           </div><br></br>
+          </Fade>
+          <Fade>
           <div className={Styles.Box}>
           <img src={Android} className={Styles.web}/>
              <div>
@@ -33,6 +51,8 @@ const Services = () => {
              </div>
              
           </div><br></br>
+          </Fade>
+          <Fade>
           <div className={Styles.Box}>
           <img src={Graphic} className={Styles.web}/>
           <div>
@@ -41,6 +61,8 @@ const Services = () => {
           </div>
              
           </div><br></br>
+          </Fade>
+          <Fade>
           <div className={Styles.Box}>
           <img src={Data} className={Styles.web}/>
           <div>
@@ -49,7 +71,10 @@ const Services = () => {
           </div>
               
           </div>
+          </Fade>
+          
         </div>
+        
         
        
     </section>

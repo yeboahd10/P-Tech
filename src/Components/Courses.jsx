@@ -9,6 +9,7 @@ import Word from '../Images/word.png'
 import Excel from '../Images/excel1.png'
 import Kotlin from '../Images/kotlin.jpg'
 import flutter from '../Images/flutter.png'
+import { Bounce } from "react-awesome-reveal";
 
 
 const Courses = () => {
@@ -17,6 +18,7 @@ const Courses = () => {
         <div className={Styles.title}>
             <h3>COURSES</h3>
         </div>
+        <Bounce>
         <div className={Styles.first}>
         <div className={Styles.Box}>
           <img src={HTML} width='80px'/>
@@ -55,6 +57,7 @@ const Courses = () => {
           <p>FLUTTER</p>  
         </div>
         </div>
+        </Bounce>
         
         
        
